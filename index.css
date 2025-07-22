@@ -5,6 +5,7 @@ html {
   font-size: 1rem;
 }
 
+/* Main Feature - Navigation Bar */
 nav {
   display: flex;
   padding: 1.4rem 0.4rem 1.6rem 0;
@@ -35,6 +36,7 @@ button {
   border: 1px #a9a9a9 solid;
 }
 
+/* Displays Hex Color and Hex Value */
 #main-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
