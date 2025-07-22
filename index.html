@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <!-- Color Box -->
+      <div class="nav-inner">
+        <label for="color-choice"></label>
+        <input type="color" id="color-choice" />
+
+        <!-- Dropdown Menu for Color Scheme -->
+        <label for="color-scheme-mood"></label>
+        <select name="color-scheme-mood" id="color-scheme-mood">
+          <option value="monochrome" selected>Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-Complement</option>
+          <option value="triad">Triad</option>
+        </select>
+
+        <!-- Button for generating color scheme -->
+        <button id="color-scheme-btn">Get Color Scheme</button>
+      </div>
+    </nav>
+    <!-- Displaying the color and its hex Value -->
+    <div id="main-container"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
