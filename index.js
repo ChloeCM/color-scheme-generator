@@ -4,11 +4,12 @@ const colorChoiceEl = document.getElementById("color-choice");
 const choiceBtn = document.getElementById("color-scheme-btn");
 const dropdownEl = document.getElementById("color-scheme-mood");
 
-// WHen a user clicks the input to choose a color, it gets
-// (fetches) the hex color value
+// When a user clicks the input to choose a color, it gets
+// (fetches) the hex color value they have choose.
+//
 colorChoiceEl.addEventListener("input", updatedHexColor);
 
-// function that gets the hex color the user chooses
+// function that fetches/ gets the hex color the user chooses
 function updatedHexColor(event) {
   const hexColor = event.target.value.replace("#", "");
 
@@ -24,6 +25,7 @@ function updatedHexColor(event) {
     });
 }
 
+// Function that displays the color and its hex value to the DOM.
 function renderColors() {
   let htmlColors = "";
   for (let color of colorsArray) {
@@ -38,6 +40,9 @@ function renderColors() {
   document.getElementById("main-container").innerHTML = htmlColors;
 }
 
+// When a user clicks the button, its get both the dropdown menu value
+// and the hex color value and fetches the data from the server to display
+// the correct information
 choiceBtn.addEventListener("click", function () {
   let dropdownChoice = dropdownEl.value;
   const hexColor = storedHexValue || "000000";
