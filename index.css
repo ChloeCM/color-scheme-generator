@@ -22,11 +22,13 @@ nav {
 
 #color-scheme-mood {
   height: 2.125rem;
+  border-radius: 10px;
 }
 
 input {
   border: none;
   height: 2.125rem;
+  cursor: pointer;
 }
 
 button {
@@ -34,6 +36,7 @@ button {
   text-decoration: underline;
   background: white;
   border: 1px #a9a9a9 solid;
+  cursor: pointer;
 }
 
 /* Displays Hex Color and Hex Value */
@@ -61,4 +64,19 @@ button {
   margin-top: 0.5rem;
   font-weight: bold;
   font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .nav-inner {
+    gap: 2rem;
+  }
+
+  input {
+    height: 3rem;
+    width: 4rem;
+  }
+
+  #color-scheme-mood {
+    height: 3rem;
+  }
 }
