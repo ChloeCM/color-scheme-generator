@@ -84,13 +84,17 @@ button:hover {
     gap: 1.7rem;
   }
 
-  input {
+  input,
+  button,
+  #color-scheme-mood {
     height: 3rem;
+  }
+
+  input {
     width: 4rem;
   }
 
   #color-scheme-mood {
-    height: 3rem;
     margin-right: 1rem;
   }
 
@@ -110,5 +114,16 @@ button:hover {
   .hex-code {
     padding-top: 0.8rem;
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .color-box {
+    border: 1px blue solid;
+    height: 700px;
+  }
+
+  .color-wrapper {
+    height: 700px;
   }
 }
