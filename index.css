@@ -118,11 +118,7 @@ button:hover {
 }
 
 @media (min-width: 1024px) {
-  .color-box {
-    border: 1px blue solid;
-    height: 700px;
-  }
-
+  .color-box,
   .color-wrapper {
     height: 700px;
   }
