@@ -25,21 +25,6 @@ function updatedHexColor(event) {
     });
 }
 
-// Function that displays the color and its hex value to the DOM.
-function renderColors() {
-  let htmlColors = "";
-  for (let color of colorsArray) {
-    htmlColors += `
-      <div class="color-wrapper">
-        <div class="color-box" style="background-color: ${color.hex.value}"></div>
-        <div class="hex-code">${color.hex.value}</div>
-      </div>
-    `;
-  }
-
-  document.getElementById("main-container").innerHTML = htmlColors;
-}
-
 // When a user clicks the button, its get both the dropdown menu value
 // and the hex color value and fetches the data from the server to display
 // the correct information
@@ -57,3 +42,18 @@ choiceBtn.addEventListener("click", function () {
       renderColors();
     });
 });
+
+// Function that displays the color and its hex value to the DOM.
+function renderColors() {
+  let htmlColors = "";
+  for (let color of colorsArray) {
+    htmlColors += `
+      <div class="color-wrapper">
+        <div class="color-box" style="background-color: ${color.hex.value}"></div>
+        <div class="hex-code">${color.hex.value}</div>
+      </div>
+    `;
+  }
+
+  document.getElementById("main-container").innerHTML = htmlColors;
+}

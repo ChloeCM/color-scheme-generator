@@ -28,13 +28,15 @@ button {
   border-radius: 10px;
 }
 
-#color-scheme-mood {
+input,
+#color-scheme-mood,
+button {
+  cursor: pointer;
   height: 2.125rem;
 }
 
 input {
   border: none;
-  height: 2.125rem;
 }
 
 button {
@@ -49,13 +51,7 @@ button:hover {
   color: white;
 }
 
-input,
-#color-scheme-mood,
-button {
-  cursor: pointer;
-}
-
-/* Displays Hex Color and Hex Value */
+/* Color Display */
 #main-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -82,6 +78,7 @@ button {
   font-size: 0.9rem;
 }
 
+/* Responsive Layout */
 @media (min-width: 768px) {
   .nav-inner {
     gap: 1.7rem;
