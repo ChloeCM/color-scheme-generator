@@ -7,28 +7,34 @@ html {
 
 /* Main Feature - Navigation Bar */
 nav {
-  display: flex;
   padding: 1.4rem 0.4rem 1.6rem 0;
   gap: 5px;
+}
+
+nav,
+.nav-inner {
+  display: flex;
 }
 
 .nav-inner {
   width: 100%;
   margin: 5px;
-  display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
 
+#color-scheme-mood,
+button {
+  border-radius: 10px;
+}
+
 #color-scheme-mood {
   height: 2.125rem;
-  border-radius: 10px;
 }
 
 input {
   border: none;
   height: 2.125rem;
-  cursor: pointer;
 }
 
 button {
@@ -36,6 +42,16 @@ button {
   text-decoration: underline;
   background: white;
   border: 1px #a9a9a9 solid;
+}
+
+button:hover {
+  background: rgb(154, 49, 211);
+  color: white;
+}
+
+input,
+#color-scheme-mood,
+button {
   cursor: pointer;
 }
 
@@ -68,7 +84,7 @@ button {
 
 @media (min-width: 768px) {
   .nav-inner {
-    gap: 2rem;
+    gap: 1.7rem;
   }
 
   input {
@@ -78,5 +94,24 @@ button {
 
   #color-scheme-mood {
     height: 3rem;
+    margin-right: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .color-wrapper {
+    height: 560px;
+  }
+
+  .color-box {
+    height: 500px;
+  }
+
+  .hex-code {
+    padding-top: 0.8rem;
+    font-size: 1.4rem;
   }
 }
