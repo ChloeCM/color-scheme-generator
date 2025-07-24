@@ -1,12 +1,11 @@
-let colorsArray = [];
-let storedHexValue = "";
 const colorChoiceEl = document.getElementById("color-choice");
 const choiceBtn = document.getElementById("color-scheme-btn");
 const dropdownEl = document.getElementById("color-scheme-mood");
+let colorsArray = [];
+let storedHexValue = "";
 
 // When a user clicks the input to choose a color, it gets
 // (fetches) the hex color value they have choose.
-//
 colorChoiceEl.addEventListener("input", updatedHexColor);
 
 // function that fetches/ gets the hex color the user chooses
@@ -54,6 +53,5 @@ function renderColors() {
       </div>
     `;
   }
-
   document.getElementById("main-container").innerHTML = htmlColors;
 }

@@ -6,14 +6,14 @@ html {
 }
 
 /* Main Feature - Navigation Bar */
-nav {
-  padding: 1.4rem 0.4rem 1.6rem 0;
-  gap: 5px;
-}
-
 nav,
 .nav-inner {
   display: flex;
+}
+
+nav {
+  padding: 1.4rem 0.4rem 1.6rem 0;
+  gap: 5px;
 }
 
 .nav-inner {
@@ -23,16 +23,16 @@ nav,
   gap: 0.5rem;
 }
 
-#color-scheme-mood,
-button {
-  border-radius: 10px;
-}
-
 input,
 #color-scheme-mood,
 button {
   cursor: pointer;
   height: 2.125rem;
+}
+
+#color-scheme-mood,
+button {
+  border-radius: 10px;
 }
 
 input {
